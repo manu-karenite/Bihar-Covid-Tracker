@@ -1,0 +1,22 @@
+{
+  "name": "covid19-in-bihar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manu-karenite/COVID19-in-Bihar.git"
+  },
+  "author": "Manavesh Narendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manu-karenite/COVID19-in-Bihar/issues"
+  },
+  "homepage": "https://github.com/manu-karenite/COVID19-in-Bihar#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
