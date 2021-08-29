@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "compile:sass" : "node-sass sass/main.scss style.css -w"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,8 @@
     "url": "https://github.com/manu-karenite/COVID19-in-Bihar/issues"
   },
   "homepage": "https://github.com/manu-karenite/COVID19-in-Bihar#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^6.0.1"
   }
 }
