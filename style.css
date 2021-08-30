@@ -6,32 +6,43 @@
 html {
   font-size: 100%; }
 
+/*Page Section*/
+/*Home-Stats Page*/
 /*Header-Section*/
-header .title-head {
-  text-align: center; }
+header {
+  background-color: #051845;
+  color: white; }
+  header .title-head {
+    padding: 2rem 1rem; }
+  header .nav-row {
+    clear: both;
+    content: "";
+    max-width: 114rem;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem 0;
+    margin: 0 5rem; }
+    header .nav-row .col {
+      width: calc((100% - (2 * 4)  * 1.5rem) / 4);
+      float: left;
+      text-align: center;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem; }
 
-header .india-summary .region-head {
-  text-align: center; }
+.title-head {
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bolder; }
 
-header .india-summary .india-stats {
-  max-width: 114rem;
-  margin: 0 auto; }
-  header .india-summary .india-stats .col {
-    width: calc((100% - (2 * 4)  * 3rem) / 4);
-    float: left;
-    text-align: center;
-    margin-right: 3rem;
-    margin-left: 3rem; }
-
-header .nav-row {
-  clear: both;
-  content: "";
-  content: "";
-  max-width: 114rem;
-  margin: 0 auto; }
-  header .nav-row .col {
-    width: calc((100% - (2 * 4)  * 3rem) / 4);
-    float: left;
-    text-align: center;
-    margin-right: 3rem;
-    margin-left: 3rem; }
+.btn-main {
+  background-color: #D6D8DD;
+  padding: 3rem 1.5rem;
+  border-radius: 1rem; }
+  .btn-main .nav-link {
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #051845;
+    font-weight: bolder;
+    letter-spacing: 2px; }
