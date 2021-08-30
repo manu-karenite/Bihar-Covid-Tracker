@@ -1,0 +1,16 @@
+.btn-main
+{
+    background-color: #D6D8DD;
+    padding : 3rem 1.5rem;
+    border-radius:1rem;
+    .nav-link
+    {
+        font-family: 'Jost', sans-serif;
+        font-size:2rem;
+        text-decoration: none;
+        color:$stats-back-color;
+        font-weight: bolder;
+        letter-spacing:2px;
+    }
+    
+}
