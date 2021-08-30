@@ -1,0 +1,30 @@
+header
+{
+    .title-head
+    {
+        text-align: center;
+    }
+    .india-summary
+    {
+        .region-head
+        {
+            text-align: center;
+        }
+        .india-stats
+        {
+            max-width :114rem;
+            margin:0 auto;
+            @include col-creator(4);
+            
+        }
+    }
+    
+    .nav-row
+    {
+        @include clearfix;
+        content:"";
+        max-width:114rem;
+        margin: 0 auto;
+        @include col-creator(4);
+    }
+}
