@@ -3,4 +3,35 @@
   margin: 0;
   box-sizing: border-box; }
 
+html {
+  font-size: 100%; }
 
+/*Header-Section*/
+header .title-head {
+  text-align: center; }
+
+header .india-summary .region-head {
+  text-align: center; }
+
+header .india-summary .india-stats {
+  max-width: 114rem;
+  margin: 0 auto; }
+  header .india-summary .india-stats .col {
+    width: calc((100% - (2 * 4)  * 3rem) / 4);
+    float: left;
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 3rem; }
+
+header .nav-row {
+  clear: both;
+  content: "";
+  content: "";
+  max-width: 114rem;
+  margin: 0 auto; }
+  header .nav-row .col {
+    width: calc((100% - (2 * 4)  * 3rem) / 4);
+    float: left;
+    text-align: center;
+    margin-right: 3rem;
+    margin-left: 3rem; }
