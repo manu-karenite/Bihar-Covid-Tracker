@@ -1,0 +1,35 @@
+.country-stats
+{
+    .country-name
+    {
+        text-align : center;
+        
+    }
+    .stats-detail
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items : flex-start;
+        flex-wrap: wrap;
+        font-size: 1.75rem;
+        .col-country-stats
+        {
+            //container too
+            margin : $nav-row-horizontal-gutter;
+            padding:$nav-row-horizontal-gutter;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex : 0 1 auto;
+            
+            .col-head , .col-current , .upto-now
+            {
+                display: inline-block;
+                padding:$india-inner-padding;
+            }
+
+        }
+    }
+}

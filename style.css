@@ -9,6 +9,7 @@ html {
 /*Page Section*/
 /*Home-Stats Page*/
 /*Header-Section*/
+/*India Section*/
 header {
   background-color: #051845;
   color: white; }
@@ -47,3 +48,25 @@ header {
     color: #051845;
     font-weight: bolder;
     letter-spacing: 2px; }
+
+.country-stats .country-name {
+  text-align: center; }
+
+.country-stats .stats-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.75rem; }
+  .country-stats .stats-detail .col-country-stats {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 0 1 auto; }
+    .country-stats .stats-detail .col-country-stats .col-head, .country-stats .stats-detail .col-country-stats .col-current, .country-stats .stats-detail .col-country-stats .upto-now {
+      display: inline-block;
+      padding: 0.5rem; }
