@@ -1,5 +1,10 @@
 .country-stats
 {
+    background-color: $stats-back-color;
+   
+    padding : 1.5rem 1.5rem;
+    
+    
     .country-name
     {
         text-align : center;
@@ -13,9 +18,15 @@
         align-items : flex-start;
         flex-wrap: wrap;
         font-size: 1.75rem;
+        margin : 3rem 3rem 1rem 3rem;
+        background-color: $stats-back-color;
+        border : 3px solid white;
+        border-radius : 8px;
+        
         .col-country-stats
         {
             //container too
+            
             margin : $nav-row-horizontal-gutter;
             padding:$nav-row-horizontal-gutter;
             display:flex;
@@ -26,10 +37,25 @@
             
             .col-head , .col-current , .upto-now
             {
-                display: inline-block;
-                padding:$india-inner-padding;
+                display: block;
+                padding:calc(2 * #{$india-inner-padding});
+                font-family: 'Jost', sans-serif;
+                text-align: center;
+                color:#D6D8DD;
+            }
+            .col-head{
+                font-weight: bolder;
             }
 
+
         }
+        @include color-tab;
+    }
+    .country-stats-updated
+    {
+        color:#D6D8DD;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: 'Jost', sans-serif;
     }
 }
