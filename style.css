@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 *, *::after, *::before {
   padding: 0;
   margin: 0;
@@ -11,7 +12,7 @@ html {
 /*Header-Section*/
 /*India Section*/
 header {
-  background-color: #051845;
+  background-color: #011030;
   color: white; }
   header .title-head {
     padding: 2rem 1rem; }
@@ -37,6 +38,14 @@ header {
   font-family: 'Comfortaa', cursive;
   font-weight: bolder; }
 
+.country-name {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #D6D8DD; }
+
 .btn-main {
   background-color: #D6D8DD;
   padding: 3rem 1.5rem;
@@ -45,28 +54,68 @@ header {
     font-family: 'Jost', sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: #051845;
+    color: #011030;
     font-weight: bolder;
     letter-spacing: 2px; }
 
-.country-stats .country-name {
-  text-align: center; }
-
-.country-stats .stats-detail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  font-size: 1.75rem; }
-  .country-stats .stats-detail .col-country-stats {
-    margin: 1rem;
-    padding: 1rem;
+.country-stats {
+  background-color: #011030;
+  padding: 1.5rem 1.5rem; }
+  .country-stats .country-name {
+    text-align: center; }
+  .country-stats .stats-detail {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: flex-start;
-    flex: 0 1 auto; }
-    .country-stats .stats-detail .col-country-stats .col-head, .country-stats .stats-detail .col-country-stats .col-current, .country-stats .stats-detail .col-country-stats .upto-now {
-      display: inline-block;
-      padding: 0.5rem; }
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    margin: 3rem 3rem 1rem 3rem;
+    background-color: #011030;
+    border: 3px solid white;
+    border-radius: 8px; }
+    .country-stats .stats-detail .col-country-stats {
+      margin: 1rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex: 0 1 auto; }
+      .country-stats .stats-detail .col-country-stats .col-head, .country-stats .stats-detail .col-country-stats .col-current, .country-stats .stats-detail .col-country-stats .upto-now {
+        display: block;
+        padding: calc(2 * 0.5rem);
+        font-family: 'Jost', sans-serif;
+        text-align: center;
+        color: #D6D8DD; }
+      .country-stats .stats-detail .col-country-stats .col-head {
+        font-weight: bolder; }
+    .country-stats .stats-detail .recovered {
+      background: linear-gradient(to right, rgba(7, 76, 0, 0.6), rgba(66, 163, 65, 0.6), rgba(184, 226, 163, 0.6));
+      border: solid 3px green;
+      border-radius: 8px; }
+    .country-stats .stats-detail .confirmed {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      border: solid 3px #182848;
+      border-radius: 8px; }
+    .country-stats .stats-detail .active {
+      background: linear-gradient(to right, #ff512f, #f09819);
+      border: solid 3px #ff512f;
+      border-radius: 8px; }
+    .country-stats .stats-detail .deceased {
+      background-image: linear-gradient(to right, black, #434343);
+      border: solid 3px #434343;
+      border-radius: 8px; }
+    .country-stats .stats-detail .vaccinated {
+      background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+      border: solid 3px #ee9ca7;
+      border-radius: 8px; }
+    .country-stats .stats-detail .population {
+      background-image: linear-gradient(to right, #6441a5, #2a0845);
+      border: solid 3px #2a0845;
+      border-radius: 8px; }
+  .country-stats .country-stats-updated {
+    color: #D6D8DD;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Jost', sans-serif; }
