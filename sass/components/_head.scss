@@ -11,9 +11,11 @@ header
     .nav-row
     {
         @include clearfix;
-       
-        max-width:114rem;
-        margin: 0 auto;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly; //main axis
+       align-items: center; //cross axis
+       flex-wrap: wrap;
         @include col-creator(4);
         overflow:hidden;
         padding: 2rem 0;

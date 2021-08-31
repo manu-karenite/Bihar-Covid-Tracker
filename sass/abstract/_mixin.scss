@@ -2,12 +2,11 @@
 {
     .col
         {
-            width : calc((100% - (2 * #{$split})  * #{$nav-row-horizontal-gutter}) / #{$split});
-            //should be floated and text aligned to center
-            float:left;
+           
             text-align: center;
-            margin-right:$nav-row-horizontal-gutter;
-            margin-left:$nav-row-horizontal-gutter;
+            margin:$nav-row-horizontal-gutter;
+            flex :0 1 auto;
+            
         }
 }
 @mixin clearfix
