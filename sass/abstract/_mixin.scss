@@ -14,3 +14,43 @@
     clear:both;
     content: "";
 }
+
+@mixin color-tab
+{
+    .recovered
+        {
+            background:linear-gradient(to right, rgba(7, 76, 0,0.6), rgba(66, 163, 65, 0.6), rgba(184, 226, 163, 0.6));
+            border : solid 3px green;
+            border-radius: 8px;
+        }
+        .confirmed
+        {
+            background:linear-gradient(to right, rgba(75, 108, 183, 1), rgba(24, 40, 72, 1));
+            border : solid 3px rgb(24, 40, 72);
+            border-radius: 8px;
+        }
+        .active
+        {
+            background:linear-gradient(to right, rgba(255, 81, 47, 1), rgba(240, 152, 25, 1));
+            border : solid 3px rgba(255, 81, 47, 1);
+            border-radius: 8px;
+        }
+        .deceased
+        {
+            background-image:linear-gradient(to right, rgb(0, 0, 0), rgba(67, 67, 67, 1));
+            border : solid 3px rgb(67,67,67);
+            border-radius: 8px;
+        }
+        .vaccinated
+        {
+            background-image:linear-gradient(to right, rgba(238, 156, 167, 1), rgba(255, 221, 225, 1));
+            border : solid 3px rgba(238, 156, 167, 1);
+            border-radius: 8px;
+        }
+        .population
+        {
+            background-image:linear-gradient(to right, rgba(100, 65, 165, 1), rgba(42, 8, 69, 1));
+            border : solid 3px rgba(42, 8, 69, 1);
+            border-radius: 8px;
+        }
+}
