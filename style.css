@@ -49,11 +49,19 @@ header {
   font-family: 'Orbitron', sans-serif;
   color: #D6D8DD; }
 
+.state-name {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  color: #D6D8DD; }
+
 .btn-main {
   background-color: #D6D8DD;
   padding: 3rem 1.5rem;
   border-radius: 1rem; }
-  .btn-main .nav-link {
+  .btn-main .nav-link-bihar-stats, .btn-main .nav-link-vaccine-availability, .btn-main .nav-link-beds-availability, .btn-main .nav-link-other {
     font-family: 'Jost', sans-serif;
     font-size: 2rem;
     text-decoration: none;
@@ -133,6 +141,85 @@ header {
       .country-stats .stats-detail .TPR:hover {
         background-image: linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7)); }
   .country-stats .country-stats-updated {
+    color: #D6D8DD;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 2px; }
+
+.bihar-stats {
+  background-color: #011030;
+  padding: 1.5rem 1.5rem; }
+  .bihar-stats .state-name {
+    text-align: center; }
+  .bihar-stats .stats-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    margin: 3rem 3rem 1rem 3rem;
+    background-color: #011030;
+    border: 3px solid white;
+    border-radius: 8px;
+    align-items: stretch; }
+    .bihar-stats .stats-detail .col-bihar-stats {
+      margin: 1rem 0.5rem;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      flex: 0 1 auto; }
+      .bihar-stats .stats-detail .col-bihar-stats .col-head, .bihar-stats .stats-detail .col-bihar-stats .col-current, .bihar-stats .stats-detail .col-bihar-stats .upto-now {
+        display: block;
+        padding: calc(2 * 0.5rem);
+        font-family: 'Jost', sans-serif;
+        text-align: center;
+        color: #D6D8DD; }
+      .bihar-stats .stats-detail .col-bihar-stats .col-head {
+        font-weight: bolder; }
+    .bihar-stats .stats-detail .recovered {
+      background: linear-gradient(to right, #074c00, #42a341, #b8e2a3);
+      transition: all 2s;
+      border: solid 3px green;
+      border-radius: 8px; }
+      .bihar-stats .stats-detail .recovered:hover {
+        background: linear-gradient(to right, rgba(7, 76, 0, 0.5), rgba(66, 163, 65, 0.5), rgba(184, 226, 163, 0.5)); }
+    .bihar-stats .stats-detail .confirmed {
+      background: linear-gradient(to right, #4b6cb7, #182848);
+      border: solid 3px #182848;
+      border-radius: 8px; }
+      .bihar-stats .stats-detail .confirmed:hover {
+        background: linear-gradient(to right, rgba(75, 108, 183, 0.5), rgba(24, 40, 72, 0.5)); }
+    .bihar-stats .stats-detail .active {
+      background: linear-gradient(to right, #ff512f, #f09819);
+      border: solid 3px #ff512f;
+      border-radius: 8px; }
+      .bihar-stats .stats-detail .active:hover {
+        background: linear-gradient(to right, rgba(255, 81, 47, 0.8), rgba(240, 152, 25, 0.8)); }
+    .bihar-stats .stats-detail .deceased {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(67, 67, 67, 0.6));
+      border: solid 3px #434343;
+      border-radius: 8px; }
+      .bihar-stats .stats-detail .deceased:hover {
+        background-image: linear-gradient(to right, black, #434343); }
+    .bihar-stats .stats-detail .vaccinated {
+      background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+      border: solid 3px #ee9ca7;
+      border-radius: 8px;
+      color: red; }
+      .bihar-stats .stats-detail .vaccinated:hover {
+        background-image: linear-gradient(to right, rgba(238, 156, 167, 0.9), rgba(255, 221, 225, 0.9)); }
+    .bihar-stats .stats-detail .TPR {
+      background-image: linear-gradient(to right, #6441a5, #2a0845);
+      border: solid 3px #2a0845;
+      border-radius: 8px; }
+      .bihar-stats .stats-detail .TPR:hover {
+        background-image: linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7)); }
+  .bihar-stats .bihar-stats-updated {
     color: #D6D8DD;
     font-weight: bolder;
     text-align: center;
