@@ -1,0 +1,61 @@
+.bihar-stats
+{
+    background-color: $stats-back-color;
+   
+    padding : 1.5rem 1.5rem;
+    .state-name
+    {
+        text-align: center;
+    }
+    .stats-detail
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items : flex-start;
+        flex-wrap: wrap;
+        font-size: 1.75rem;
+        margin : 3rem 3rem 1rem 3rem;
+        background-color: $stats-back-color;
+        border : 3px solid white;
+        border-radius : 8px;
+        align-items: stretch;
+        
+        .col-bihar-stats
+        {
+            //container too
+            
+            margin : $nav-row-horizontal-gutter $india-inner-padding;
+            padding:$nav-row-horizontal-gutter;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex : 0 1 auto;
+            
+            .col-head , .col-current , .upto-now
+            {
+                display: block;
+                padding:calc(2 * #{$india-inner-padding});
+                font-family: 'Jost', sans-serif;
+                text-align: center;
+                color:#D6D8DD;
+            }
+            .col-head{
+                font-weight: bolder;
+            }
+
+
+        }
+        @include color-tab;
+    }
+    .bihar-stats-updated
+    {
+        color:#D6D8DD;
+        font-weight: bolder;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Jost', sans-serif;
+        letter-spacing: 2px;
+    }
+}
