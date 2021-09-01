@@ -15,15 +15,15 @@
             </div>
            
             <div class="nav-row">
-                <div class="col btn-main"><a href="#" class="nav-link">COVID Stats</a></div>
-                <div class="col btn-main"><a href="#" class="nav-link">Vaccine Availability</a></div>
-                <div class="col btn-main"><a href="#" class="nav-link">Beds Availability</a></div>
-                <div class="col btn-main"><a href="#" class="nav-link">Column-4</a></div>
+                <div class="col btn-main"><a href="#" class="nav-link-bihar-stats">COVID Stats</a></div>
+                <div class="col btn-main"><a href="#" class="nav-link-vaccine-availability">Vaccine Availability</a></div>
+                <div class="col btn-main"><a href="#" class="nav-link-beds-availability">Beds Availability</a></div>
+                <div class="col btn-main"><a href="#" class="nav-link-other">Column-4</a></div>
             </div>
         </header>
         <main>
             <section class="country-stats">
-                <div class="country-name">India | Statistics</div>
+                <div class="country-name">India</div>
                 <div class="stats-detail">
                     <div class="col-country-stats confirmed">
                         <div class="col-head" >Confirmed</div>
@@ -57,6 +57,43 @@
                     </div>
                 </div>
                 <div class="country-stats-updated">Stats Updated at</div>
+            </section>
+
+            <section class="bihar-stats">
+                <div class="state-name">Bihar Summary</div>
+                <div class="stats-detail">
+                    <div class="col-bihar-stats confirmed">
+                        <div class="col-head" >Confirmed</div>
+                        <div class="col-current" id="bihar-today-confirmed">Current</div>
+                        <div class="upto-now" id="bihar-total-confirmed">Upto Now</div>
+                    </div>
+                    <div class="col-bihar-stats active">
+                        <div class="col-head">Active</div>
+                        <div class="col-current" id="bihar-today-active">Current</div>
+                    </div>
+                    <div class="col-bihar-stats recovered">
+                        <div class="col-head">Recovered</div>
+                        <div class="col-current"  id="bihar-today-recovered">Current</div>
+                        <div class="upto-now"  id="bihar-total-recovered">Upto Now</div>
+                    </div>
+                    <div class="col-bihar-stats deceased">
+                        <div class="col-head">Deceased</div>
+                        <div class="col-current"  id="bihar-today-deceased">Current</div>
+                        <div class="upto-now"  id="bihar-total-deceased">Upto Now</div>
+                    </div>
+                    <div class="col-bihar-stats  vaccinated">
+                        <div class="col-head">Vaccination</div>
+                        <div class="col-current"  id="bihar-today-vaccinated">Current</div>
+                        <div class="upto-now" id="bihar-total-vaccinated">Upto Now</div>
+                    </div>
+                    <div class="col-bihar-stats TPR">
+                        
+                        <div class="col-head">Total Positivity Ratio</div>
+                        <div class="col-current" id="bihar-today-TPR">Current</div>
+                        <div class="upto-now" id="bihar-week-TPR">Upto Now</div>
+                    </div>
+                </div>
+                <div class="bihar-stats-updated">Stats Updated at</div>
             </section>
         </main>
         <script src="script.js"></script>
