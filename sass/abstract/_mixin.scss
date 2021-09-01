@@ -1,14 +1,4 @@
-@mixin col-creator($split)
-{
-    .col
-        {
-           
-            text-align: center;
-            margin:$nav-row-horizontal-gutter;
-            flex :0 1 auto;
-            
-        }
-}
+
 @mixin clearfix
 {
     clear:both;
@@ -19,7 +9,7 @@
 {
     .recovered
         {
-            background:linear-gradient(to right, rgba(7, 76, 0,1), rgba(66, 163, 65, 1), rgba(184, 226, 163, 1));
+            background:linear-gradient(to right,   rgba(184, 226, 163, 0.8),rgba(66, 163, 65, 1),rgba(7, 76, 0,8));
            transition: all 2s;
            border : solid 3px green;
             border-radius: 8px;
@@ -41,7 +31,7 @@
         }
         .active
         {
-            background:linear-gradient(to right, rgba(255, 81, 47,1), rgba(240, 152, 25, 1));
+            background:linear-gradient(to right, rgba(255, 81, 47,1),rgba(240, 152, 25, 1));
             border : solid 3px rgba(255, 81, 47, 1);
             border-radius: 8px;
             &:hover

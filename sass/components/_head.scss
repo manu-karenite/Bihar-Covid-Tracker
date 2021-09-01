@@ -8,19 +8,5 @@ header
         
     }
     
-    .nav-row
-    {
-        @include clearfix;
-       display: flex;
-       flex-direction: row;
-       justify-content: space-evenly; //main axis
-       align-items: center; //cross axis
-       flex-wrap: wrap;
-        @include col-creator(4);
-        overflow:hidden;
-        padding: 2rem 0;
-        margin : 0 5rem;
-        
-       
-    }
+    
 }

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 .title-head
 {
-    font-size :3.75rem;
+    font-size :6rem;
     text-align: center;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Abril Fatface', cursive;
     font-weight:bolder;
+    letter-spacing: 4px;
 }
 
 .country-name
@@ -25,4 +26,9 @@
     padding : 1.5rem;
     font-family: 'Orbitron', sans-serif;
     color:#D6D8DD;
+}
+
+.vaccinated
+{
+   -webkit-text-fill-color: #501b1d;
 }
