@@ -75,12 +75,7 @@
 
 @mixin respond($parameter)
 {
-    @if $parameter == tab-land
-    {
-        @media only screen and (min-width: 56.26rem){ //1200
-            @content    
-        };
-    }
+    
     @if $parameter == tab-port
     {
         @media only screen and (min-width:37.51rem) and (max-width : 56.25em) {//900
@@ -98,6 +93,12 @@
     @if $parameter == big-device
     {
         @media screen and (min-width : 112.5em) {
+            @content    
+        };
+    }
+    @if $parameter == tab-land
+    {
+        @media only screen and (min-width: 56.26rem) and (max-width : 112.49em){ //1200
             @content    
         };
     }
