@@ -19,27 +19,13 @@ header {
   color: white; }
   header .title-head {
     padding: 2rem 1rem; }
-  header .nav-row {
-    clear: both;
-    content: "";
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    padding: 2rem 0;
-    margin: 0 5rem; }
-    header .nav-row .col {
-      text-align: center;
-      margin: 1rem;
-      flex: 0 1 auto; }
 
 .title-head {
-  font-size: 3.75rem;
+  font-size: 6rem;
   text-align: center;
-  font-family: 'Comfortaa', cursive;
-  font-weight: bolder; }
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bolder;
+  letter-spacing: 4px; }
 
 .country-name {
   font-size: 3.5rem;
@@ -56,6 +42,9 @@ header {
   padding: 1.5rem;
   font-family: 'Orbitron', sans-serif;
   color: #D6D8DD; }
+
+.vaccinated {
+  -webkit-text-fill-color: #501b1d; }
 
 .btn-main {
   background-color: #D6D8DD;
@@ -93,7 +82,7 @@ header {
       flex-direction: column;
       justify-content: flex-start;
       align-items: stretch;
-      flex: 0 1 auto; }
+      flex: 0 1 25%; }
       .country-stats .stats-detail .col-country-stats .col-head, .country-stats .stats-detail .col-country-stats .col-current, .country-stats .stats-detail .col-country-stats .upto-now {
         display: block;
         padding: calc(2 * 0.5rem);
@@ -103,7 +92,7 @@ header {
       .country-stats .stats-detail .col-country-stats .col-head {
         font-weight: bolder; }
     .country-stats .stats-detail .recovered {
-      background: linear-gradient(to right, #074c00, #42a341, #b8e2a3);
+      background: linear-gradient(to right, rgba(184, 226, 163, 0.8), #42a341, #074c00);
       transition: all 2s;
       border: solid 3px green;
       border-radius: 8px; }
@@ -172,7 +161,7 @@ header {
       flex-direction: column;
       justify-content: flex-start;
       align-items: stretch;
-      flex: 0 1 auto; }
+      flex: 0 1 25%; }
       .bihar-stats .stats-detail .col-bihar-stats .col-head, .bihar-stats .stats-detail .col-bihar-stats .col-current, .bihar-stats .stats-detail .col-bihar-stats .upto-now {
         display: block;
         padding: calc(2 * 0.5rem);
@@ -182,7 +171,7 @@ header {
       .bihar-stats .stats-detail .col-bihar-stats .col-head {
         font-weight: bolder; }
     .bihar-stats .stats-detail .recovered {
-      background: linear-gradient(to right, #074c00, #42a341, #b8e2a3);
+      background: linear-gradient(to right, rgba(184, 226, 163, 0.8), #42a341, #074c00);
       transition: all 2s;
       border: solid 3px green;
       border-radius: 8px; }
