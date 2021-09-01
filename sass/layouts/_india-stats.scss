@@ -17,7 +17,7 @@
         justify-content: space-around;
         align-items : flex-start;
         flex-wrap: wrap;
-        font-size: 1.75rem;
+        font-size: 2rem;
         margin : 3rem 3rem 1rem 3rem;
         background-color: $stats-back-color;
         border : 3px solid white;
@@ -43,9 +43,11 @@
                 font-family: 'Jost', sans-serif;
                 text-align: center;
                 color:#D6D8DD;
+                letter-spacing: 3px;
             }
             .col-head{
                 font-weight: bolder;
+                
             }
 
 
