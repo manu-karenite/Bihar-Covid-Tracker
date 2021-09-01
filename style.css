@@ -7,6 +7,9 @@
 html {
   font-size: 75%; }
 
+body {
+  padding: 1.5rem; }
+
 /*Page Section*/
 /*Home-Stats Page*/
 /*Header-Section*/
@@ -92,29 +95,43 @@ header {
       .country-stats .stats-detail .col-country-stats .col-head {
         font-weight: bolder; }
     .country-stats .stats-detail .recovered {
-      background: linear-gradient(to right, rgba(7, 76, 0, 0.6), rgba(66, 163, 65, 0.6), rgba(184, 226, 163, 0.6));
+      background: linear-gradient(to right, #074c00, #42a341, #b8e2a3);
+      transition: all 2s;
       border: solid 3px green;
       border-radius: 8px; }
+      .country-stats .stats-detail .recovered:hover {
+        background: linear-gradient(to right, rgba(7, 76, 0, 0.5), rgba(66, 163, 65, 0.5), rgba(184, 226, 163, 0.5)); }
     .country-stats .stats-detail .confirmed {
       background: linear-gradient(to right, #4b6cb7, #182848);
       border: solid 3px #182848;
       border-radius: 8px; }
+      .country-stats .stats-detail .confirmed:hover {
+        background: linear-gradient(to right, rgba(75, 108, 183, 0.5), rgba(24, 40, 72, 0.5)); }
     .country-stats .stats-detail .active {
       background: linear-gradient(to right, #ff512f, #f09819);
       border: solid 3px #ff512f;
       border-radius: 8px; }
+      .country-stats .stats-detail .active:hover {
+        background: linear-gradient(to right, rgba(255, 81, 47, 0.8), rgba(240, 152, 25, 0.8)); }
     .country-stats .stats-detail .deceased {
-      background-image: linear-gradient(to right, black, #434343);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(67, 67, 67, 0.6));
       border: solid 3px #434343;
       border-radius: 8px; }
+      .country-stats .stats-detail .deceased:hover {
+        background-image: linear-gradient(to right, black, #434343); }
     .country-stats .stats-detail .vaccinated {
       background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
       border: solid 3px #ee9ca7;
-      border-radius: 8px; }
+      border-radius: 8px;
+      color: red; }
+      .country-stats .stats-detail .vaccinated:hover {
+        background-image: linear-gradient(to right, rgba(238, 156, 167, 0.9), rgba(255, 221, 225, 0.9)); }
     .country-stats .stats-detail .TPR {
       background-image: linear-gradient(to right, #6441a5, #2a0845);
       border: solid 3px #2a0845;
       border-radius: 8px; }
+      .country-stats .stats-detail .TPR:hover {
+        background-image: linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7)); }
   .country-stats .country-stats-updated {
     color: #D6D8DD;
     font-weight: bolder;

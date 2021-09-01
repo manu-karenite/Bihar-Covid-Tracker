@@ -19,38 +19,66 @@
 {
     .recovered
         {
-            background:linear-gradient(to right, rgba(7, 76, 0,0.6), rgba(66, 163, 65, 0.6), rgba(184, 226, 163, 0.6));
-            border : solid 3px green;
+            background:linear-gradient(to right, rgba(7, 76, 0,1), rgba(66, 163, 65, 1), rgba(184, 226, 163, 1));
+           transition: all 2s;
+           border : solid 3px green;
             border-radius: 8px;
+            &:hover
+            {
+                background:linear-gradient(to right, rgba(7, 76, 0,0.5), rgba(66, 163, 65, 0.5), rgba(184, 226, 163, 0.5));
+            }
         }
         .confirmed
         {
             background:linear-gradient(to right, rgba(75, 108, 183, 1), rgba(24, 40, 72, 1));
             border : solid 3px rgb(24, 40, 72);
             border-radius: 8px;
+            &:hover
+            {
+
+                background:linear-gradient(to right, rgba(75, 108, 183, 0.5), rgba(24, 40, 72, 0.5));
+            }
         }
         .active
         {
-            background:linear-gradient(to right, rgba(255, 81, 47, 1), rgba(240, 152, 25, 1));
+            background:linear-gradient(to right, rgba(255, 81, 47,1), rgba(240, 152, 25, 1));
             border : solid 3px rgba(255, 81, 47, 1);
             border-radius: 8px;
+            &:hover
+            {
+
+                background:linear-gradient(to right, rgba(255, 81, 47, 0.8), rgba(240, 152, 25, 0.8));
+            }
         }
         .deceased
         {
-            background-image:linear-gradient(to right, rgb(0, 0, 0), rgba(67, 67, 67, 1));
+            background-image:linear-gradient(to right, rgba(0, 0, 0,0.6), rgba(67, 67, 67, 0.6));
             border : solid 3px rgb(67,67,67);
             border-radius: 8px;
+            &:hover
+            {
+                background-image:linear-gradient(to right, rgba(0, 0, 0,1.2), rgba(67, 67, 67, 1.2));
+            }
         }
         .vaccinated
         {
             background-image:linear-gradient(to right, rgba(238, 156, 167, 1), rgba(255, 221, 225, 1));
             border : solid 3px rgba(238, 156, 167, 1);
             border-radius: 8px;
+            color:red;
+            &:hover
+            {
+
+                background-image:linear-gradient(to right, rgba(238, 156, 167, 0.9), rgba(255, 221, 225, 0.9));
+            }
         }
         .TPR
         {
             background-image:linear-gradient(to right, rgba(100, 65, 165, 1), rgba(42, 8, 69, 1));
             border : solid 3px rgba(42, 8, 69, 1);
             border-radius: 8px;
+            &:hover{
+                background-image:linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7));
+            }
         }
 }
