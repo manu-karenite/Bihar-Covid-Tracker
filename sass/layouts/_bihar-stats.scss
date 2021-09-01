@@ -15,10 +15,10 @@
         align-items : flex-start;
         flex-wrap: wrap;
         font-size: 2rem;
-        margin : 3rem 3rem 1rem 3rem;
+        margin : 3rem 3rem 3rem 3rem;
         background-color: $stats-back-color;
-        border : 3px solid white;
-        border-radius : 8px;
+        border : 0.3rem solid white;
+        border-radius : 0.8rem;
         align-items: stretch;
         
         .col-bihar-stats
@@ -40,7 +40,7 @@
                 font-family: 'Jost', sans-serif;
                 text-align: center;
                 color:#D6D8DD;
-                letter-spacing: 3px;
+                letter-spacing: 0.3rem;
             }
             .col-head{
                 font-weight: bolder;
@@ -58,6 +58,6 @@
         text-align: center;
         font-size: 2rem;
         font-family: 'Jost', sans-serif;
-        letter-spacing: 2px;
+        letter-spacing: 0.2rem;
     }
 }

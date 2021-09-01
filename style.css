@@ -1,3 +1,7 @@
+/*Page Section*/
+/*Home-Stats Page*/
+/*Header-Section*/
+/*India Section*/
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 *, *::after, *::before {
   padding: 0;
@@ -5,17 +9,25 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 75%; }
+  font-size: 75%;
+  background-color: #011030; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (min-width: 37.51rem) and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 56.26rem) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   padding: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 0; } }
 
-/*Page Section*/
-/*Home-Stats Page*/
-/*Header-Section*/
-/*India Section*/
 header {
-  background-color: #011030;
   color: white; }
   header .title-head {
     padding: 2rem 1rem; }
@@ -25,12 +37,12 @@ header {
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   font-weight: bolder;
-  letter-spacing: 4px; }
+  letter-spacing: 0.4rem; }
 
 .country-name {
   font-size: 3.5rem;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 0.8rem;
   padding: 1.5rem;
   font-family: 'Orbitron', sans-serif;
   color: #D6D8DD; }
@@ -38,7 +50,7 @@ header {
 .state-name {
   font-size: 3.5rem;
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 0.8rem;
   padding: 1.5rem;
   font-family: 'Orbitron', sans-serif;
   color: #D6D8DD; }
@@ -56,7 +68,7 @@ header {
     text-decoration: none;
     color: #011030;
     font-weight: bolder;
-    letter-spacing: 2px; }
+    letter-spacing: 0.2rem; }
 
 .country-stats {
   background-color: #011030;
@@ -70,10 +82,10 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
     font-size: 2rem;
-    margin: 3rem 3rem 1rem 3rem;
+    margin: 3rem 3rem 3rem 3rem;
     background-color: #011030;
-    border: 3px solid white;
-    border-radius: 8px;
+    border: 0.3rem solid white;
+    border-radius: 0.8rem;
     align-items: stretch; }
     .country-stats .stats-detail .col-country-stats {
       margin: 1rem 0.5rem;
@@ -89,45 +101,45 @@ header {
         font-family: 'Jost', sans-serif;
         text-align: center;
         color: #D6D8DD;
-        letter-spacing: 3px; }
+        letter-spacing: 0.3rem; }
       .country-stats .stats-detail .col-country-stats .col-head {
         font-weight: bolder; }
     .country-stats .stats-detail .recovered {
       background: linear-gradient(to right, rgba(184, 226, 163, 0.8), #42a341, #074c00);
       transition: all 2s;
-      border: solid 3px green;
-      border-radius: 8px; }
+      border: solid 0.3rem green;
+      border-radius: 0.8rem; }
       .country-stats .stats-detail .recovered:hover {
         background: linear-gradient(to right, rgba(7, 76, 0, 0.5), rgba(66, 163, 65, 0.5), rgba(184, 226, 163, 0.5)); }
     .country-stats .stats-detail .confirmed {
       background: linear-gradient(to right, #4b6cb7, #182848);
-      border: solid 3px #182848;
-      border-radius: 8px; }
+      border: solid 0.3rem #182848;
+      border-radius: 0.8rem; }
       .country-stats .stats-detail .confirmed:hover {
         background: linear-gradient(to right, rgba(75, 108, 183, 0.5), rgba(24, 40, 72, 0.5)); }
     .country-stats .stats-detail .active {
       background: linear-gradient(to right, #ff512f, #f09819);
-      border: solid 3px #ff512f;
-      border-radius: 8px; }
+      border: solid 0.3rem #ff512f;
+      border-radius: 0.8rem; }
       .country-stats .stats-detail .active:hover {
         background: linear-gradient(to right, rgba(255, 81, 47, 0.8), rgba(240, 152, 25, 0.8)); }
     .country-stats .stats-detail .deceased {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(67, 67, 67, 0.6));
-      border: solid 3px #434343;
-      border-radius: 8px; }
+      border: solid 0.3rem #434343;
+      border-radius: 0.8rem; }
       .country-stats .stats-detail .deceased:hover {
         background-image: linear-gradient(to right, black, #434343); }
     .country-stats .stats-detail .vaccinated {
       background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
-      border: solid 3px #ee9ca7;
-      border-radius: 8px;
+      border: solid 0.3rem #ee9ca7;
+      border-radius: 0.8rem;
       color: red; }
       .country-stats .stats-detail .vaccinated:hover {
         background-image: linear-gradient(to right, rgba(238, 156, 167, 0.9), rgba(255, 221, 225, 0.9)); }
     .country-stats .stats-detail .TPR {
       background-image: linear-gradient(to right, #6441a5, #2a0845);
-      border: solid 3px #2a0845;
-      border-radius: 8px; }
+      border: solid 0.3rem #2a0845;
+      border-radius: 0.8rem; }
       .country-stats .stats-detail .TPR:hover {
         background-image: linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7)); }
   .country-stats .country-stats-updated {
@@ -136,7 +148,7 @@ header {
     text-align: center;
     font-size: 2rem;
     font-family: 'Jost', sans-serif;
-    letter-spacing: 2px; }
+    letter-spacing: 0.2rem; }
 
 .bihar-stats {
   background-color: #011030;
@@ -150,10 +162,10 @@ header {
     align-items: flex-start;
     flex-wrap: wrap;
     font-size: 2rem;
-    margin: 3rem 3rem 1rem 3rem;
+    margin: 3rem 3rem 3rem 3rem;
     background-color: #011030;
-    border: 3px solid white;
-    border-radius: 8px;
+    border: 0.3rem solid white;
+    border-radius: 0.8rem;
     align-items: stretch; }
     .bihar-stats .stats-detail .col-bihar-stats {
       margin: 1rem 0.5rem;
@@ -169,45 +181,45 @@ header {
         font-family: 'Jost', sans-serif;
         text-align: center;
         color: #D6D8DD;
-        letter-spacing: 3px; }
+        letter-spacing: 0.3rem; }
       .bihar-stats .stats-detail .col-bihar-stats .col-head {
         font-weight: bolder; }
     .bihar-stats .stats-detail .recovered {
       background: linear-gradient(to right, rgba(184, 226, 163, 0.8), #42a341, #074c00);
       transition: all 2s;
-      border: solid 3px green;
-      border-radius: 8px; }
+      border: solid 0.3rem green;
+      border-radius: 0.8rem; }
       .bihar-stats .stats-detail .recovered:hover {
         background: linear-gradient(to right, rgba(7, 76, 0, 0.5), rgba(66, 163, 65, 0.5), rgba(184, 226, 163, 0.5)); }
     .bihar-stats .stats-detail .confirmed {
       background: linear-gradient(to right, #4b6cb7, #182848);
-      border: solid 3px #182848;
-      border-radius: 8px; }
+      border: solid 0.3rem #182848;
+      border-radius: 0.8rem; }
       .bihar-stats .stats-detail .confirmed:hover {
         background: linear-gradient(to right, rgba(75, 108, 183, 0.5), rgba(24, 40, 72, 0.5)); }
     .bihar-stats .stats-detail .active {
       background: linear-gradient(to right, #ff512f, #f09819);
-      border: solid 3px #ff512f;
-      border-radius: 8px; }
+      border: solid 0.3rem #ff512f;
+      border-radius: 0.8rem; }
       .bihar-stats .stats-detail .active:hover {
         background: linear-gradient(to right, rgba(255, 81, 47, 0.8), rgba(240, 152, 25, 0.8)); }
     .bihar-stats .stats-detail .deceased {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(67, 67, 67, 0.6));
-      border: solid 3px #434343;
-      border-radius: 8px; }
+      border: solid 0.3rem #434343;
+      border-radius: 0.8rem; }
       .bihar-stats .stats-detail .deceased:hover {
         background-image: linear-gradient(to right, black, #434343); }
     .bihar-stats .stats-detail .vaccinated {
       background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
-      border: solid 3px #ee9ca7;
-      border-radius: 8px;
+      border: solid 0.3rem #ee9ca7;
+      border-radius: 0.8rem;
       color: red; }
       .bihar-stats .stats-detail .vaccinated:hover {
         background-image: linear-gradient(to right, rgba(238, 156, 167, 0.9), rgba(255, 221, 225, 0.9)); }
     .bihar-stats .stats-detail .TPR {
       background-image: linear-gradient(to right, #6441a5, #2a0845);
-      border: solid 3px #2a0845;
-      border-radius: 8px; }
+      border: solid 0.3rem #2a0845;
+      border-radius: 0.8rem; }
       .bihar-stats .stats-detail .TPR:hover {
         background-image: linear-gradient(to right, rgba(100, 65, 165, 0.7), rgba(42, 8, 69, 0.7)); }
   .bihar-stats .bihar-stats-updated {
@@ -216,7 +228,7 @@ header {
     text-align: center;
     font-size: 2rem;
     font-family: 'Jost', sans-serif;
-    letter-spacing: 2px; }
+    letter-spacing: 0.2rem; }
 
 footer {
   background-color: black;
@@ -234,7 +246,7 @@ footer {
     text-align: center;
     margin-top: 2rem;
     font-family: 'Jost', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     background: linear-gradient(to right, #ff512f, #f09819, yellow);
     background-clip: text;
     -webkit-background-clip: text;
