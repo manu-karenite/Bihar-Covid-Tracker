@@ -56,7 +56,7 @@ fetch('https://data.covid19india.org/v4/min/data.min.json').then(function(respon
     const deltaRecovered = dataa.TT.delta.recovered;
     const vaccinatedToday = (dataa.TT?.delta?.vaccinated1 + dataa.TT?.delta?.vaccinated2);
     if(Number.isFinite(vaccinatedToday)==false)
-        cntTodayVcc.textContent=`Today: Not Announcement`;
+        cntTodayVcc.textContent=`Today: Not Announced`;
     else
         cntTodayVcc.textContent=`Today: ${new Intl.NumberFormat(locale).format(vaccinatedToday)}`;
 
@@ -78,7 +78,7 @@ fetch('https://data.covid19india.org/v4/min/data.min.json').then(function(respon
     cntTotalDcsd.textContent=`Total: ${new Intl.NumberFormat(locale).format(fullDeceased)}`;
     cntTotalRecvd.textContent=`Total: ${new Intl.NumberFormat(locale).format(fullRecovered)}`;
     cntTotalVcc.textContent=`Total: ${new Intl.NumberFormat(locale).format(fullVaccinated)}`;
-    cntWeekTPR.textContent=`Total : ${weekTPR.toFixed(2)}%`;
+    cntWeekTPR.textContent=`7 - Day: ${weekTPR.toFixed(2)}%`;
     if(Number.isFinite(currentTPR)==false)
         cntTodayTPR.textContent=`Today: Not Announced`;
     else
@@ -132,7 +132,7 @@ fetch('https://data.covid19india.org/v4/min/data.min.json').then(function(respon
 
     const bihardeltaDeceased = dataa?.BR?.delta?.deceased;
     if(bihardeltaDeceased===undefined)
-        biharcntTodayDcsd.textContent = `Today: Not Announced`;
+        biharcntTodayDcsd.textContent = `Today: 0`;
     else
         biharcntTodayDcsd.textContent = `Today: ${new Intl.NumberFormat(locale).format(bihardeltaDeceased)}`;
     
@@ -155,13 +155,4 @@ fetch('https://data.covid19india.org/v4/min/data.min.json').then(function(respon
         biharcntTodayTPR.textContent = `Today: ${new Intl.NumberFormat(locale).format(biharcurrentTPR)}%`;
 
 })
-document.querySelector('.nav-link-bihar-stats').addEventListener('click',function(e)
-{
-    e.preventDefault();
-    document.querySelector('.bihar-stats').scrollIntoView
-(
-    {
-        behavior:"smooth",
-    }
-);
-});
+
