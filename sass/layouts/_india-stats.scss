@@ -22,17 +22,18 @@
         background-color: $stats-back-color;
         border : 3px solid white;
         border-radius : 8px;
+        align-items: stretch;
         
         .col-country-stats
         {
             //container too
             
-            margin : $nav-row-horizontal-gutter;
+            margin : $nav-row-horizontal-gutter $india-inner-padding;
             padding:$nav-row-horizontal-gutter;
             display:flex;
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: stretch;
             flex : 0 1 auto;
             
             .col-head , .col-current , .upto-now
@@ -54,8 +55,10 @@
     .country-stats-updated
     {
         color:#D6D8DD;
+        font-weight: bolder;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: 'Jost', sans-serif;
+        letter-spacing: 2px;
     }
 }
