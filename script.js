@@ -140,7 +140,7 @@ fetch('https://data.covid19india.org/v4/min/data.min.json').then(function(respon
     if(bihardeltaRecovered===undefined)
         biharcntTodayRecvd.textContent = `Today: Not Announced`;
     else
-        biharcntTodayConf.textContent = `Today: ${new Intl.NumberFormat(locale).format(bihardeltaRecovered)}`;
+        biharcntTodayRecvd.textContent = `Today: ${new Intl.NumberFormat(locale).format(bihardeltaRecovered)}`;
 
     const biharvaccinatedToday = (dataa.BR?.delta?.vaccinated1 + dataa.BR?.delta?.vaccinated2);
     if(Number.isFinite(biharvaccinatedToday)==false)
